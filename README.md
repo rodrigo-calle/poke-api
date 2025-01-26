@@ -31,6 +31,21 @@ Insert data to db using the following command
 curl  http://localhost:3000/api/v2/seed/ -POST
 ```
 
+## Production Build
+
+1. Create file __.env.prod__
+2. Fill prod environment variables
+3. Create new image
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+### Test app dockerized
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up
+```
+
 ## Stack used
 
 * MongoDB
