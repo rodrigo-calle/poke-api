@@ -21,6 +21,8 @@ npm i -g  @nestjs/cli
 docker-compose up
 ```
 
+5. Clone file __.env.example__ and rename the copy to .env and complete the variables
+
 ## Insert seeds in db
 
 Insert data to db using the following command
